@@ -11,11 +11,16 @@
 */
 
 function factorial(n) {
-    let foo = n;
-    if (n > 1) {
-        foo *= factorial(n - 1);
-    }
-    return foo;
+    // My Solution
+    // let foo = n;
+    // if (n > 1) {
+    //     foo *= factorial(n - 1);
+    // }
+    // return foo;
+
+    // Actual Solution
+    if (n < 2) return 1;
+    return n * factorial(n - 1);
 }
 
 // unit tests
